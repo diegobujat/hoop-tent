@@ -1,0 +1,46 @@
+$font-size-scale: 1.25;
+
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: ('primary': ('base': green)),
+  $font-size: (
+    'extra-large': 20px * $font-size-scale,
+    'large': 18px * $font-size-scale,
+    'medium': 16px * $font-size-scale,
+    'base': 14px * $font-size-scale,
+    'small': 13px * $font-size-scale,
+    'extra-small': 12px * $font-size-scale,
+  ),
+  $input-font-size: (
+    'large': 14px * $font-size-scale,
+    'default': 14px * $font-size-scale,
+    'small': 12px * $font-size-scale,
+  )
+  );
+  @import 'element-plus/theme-chalk/src/index.scss';
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: rgba(24, 24, 24, 0.87);
+  background-color: #e4953b;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --el-border-radius-small: 16px !important;
+  --el-border-radius-round: 30px !important;
+  --el-border-radius-circle: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 20px;
+}
